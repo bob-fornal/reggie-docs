@@ -3,7 +3,13 @@
 
 ## About
 
-## Example Usage
+This package will take a Template Literal, remove comments, and generate a RegEx-ready string.
+
+## Installation
+
+`npm install reggie-docs`
+
+## Usage
 
 ```javascript
 
@@ -53,3 +59,8 @@ results.code0006TestBValid = code0006Exp.exec(patternCheck0006b) !== null;
 
 console.log(results);
 ```
+
+## To Do
+
+1. Continue to improve the logic.
+2. Add in error handling.
