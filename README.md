@@ -8,6 +8,10 @@ This package will take a Template Literal, remove comments, and generate, either
 * `reggie.create`: A RegEx-ready String.
 * `reggie.generate`: A RegExp Object.
 
+## Version
+
+`0.0.2`
+
 ## Installation
 
 `npm install reggie-docs`
