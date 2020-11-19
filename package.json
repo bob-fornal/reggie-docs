@@ -1,6 +1,6 @@
 {
   "name": "reggie-docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This package will take a Template Literal, remove comments, and generate a RegEx-ready string.",
   "main": "index.js",
   "scripts": {
