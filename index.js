@@ -12,8 +12,8 @@ class Reggie {
       .replace(/(\r\n|r\|\n|\s)/gm, '');
   }
 
-  generate(stringLiteral) {
-    return new RegExp(this.create(stringLiteral));
+  generate(stringLiteral, flags = 'gm') {
+    return new RegExp(this.create(stringLiteral), flags);
   }
 }
 
