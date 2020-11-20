@@ -10,7 +10,7 @@ This package will take a Template Literal, remove comments, and generate, either
 
 ## Version
 
-`0.0.3`
+`0.0.4`
 
 ## Installation
 
