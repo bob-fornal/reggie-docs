@@ -10,7 +10,7 @@ This package will take a Template Literal, remove comments, and generate, either
 
 ## Version
 
-`0.0.4`
+`0.0.5`
 
 ## Installation
 
@@ -20,11 +20,11 @@ This package will take a Template Literal, remove comments, and generate, either
 
 ### Options
 
-`reggie.create`: A RegEx-ready String.
+`reggie.create(stringLiteral)`: A RegEx-ready String.
 
 * Takes a string literal.
 
-`reggie.generate`: A RegExp Object.
+`reggie.generate(stringLiteral, [flags = 'gm']`: A RegExp Object.
 
 * Takes a string literal.
 * Optional flags: defaults to `gm`
@@ -76,6 +76,22 @@ results.code0006 = reggie.create(code0006);
 const code0006Exp = reggie.generate(code0006);
 results.code0006TestAValid = code0006Exp.exec(patternCheck0006a) !== null;
 results.code0006TestBValid = code0006Exp.exec(patternCheck0006b) !== null;
+
+// /^(v?\d+\.\d+\.\d+)$/gi
+const code0007 = `
+  ^       // BOL
+  (       // Group
+    v?    // Version
+    \d+   // Any Numbers
+    \.    //  .
+    \d+   // Any Numbers
+    \.    //  .
+    \d+   // Any Numbers
+  )
+  $       // EOL
+`
+
+results.code0007 = reggie.generate(code0007, 'gi');
 
 console.log(results);
 ```

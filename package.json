@@ -1,7 +1,7 @@
 {
   "name": "reggie-docs",
-  "version": "0.0.4",
-  "description": "This package will take a Template Literal, remove comments, and generate a RegEx-ready string.",
+  "version": "0.0.5",
+  "description": "This package will take a Template Literal, remove comments, and generate a RegEx-ready string or regex for use.",
   "main": "index.js",
   "bugs": {
     "url": "https://github.com/bob-fornal/reggie-docs/issues",
