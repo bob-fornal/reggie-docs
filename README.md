@@ -81,15 +81,15 @@ results.code0006TestBValid = code0006Exp.exec(patternCheck0006b) !== null;
 const code0007 = `
   ^       // BOL
   (       // Group
-    v?    // Version
-    \d+   // Any Numbers
-    \.    //  .
-    \d+   // Any Numbers
-    \.    //  .
-    \d+   // Any Numbers
+    v?    // Version Optional
+    \d+   // Any Digit (at least one)
+    \.    //  PERIOD CHARACTER
+    \d+   // Any Digit (at least one)
+    \.    //  PERIOD CHARACTER
+    \d+   // Any Digit (at least one)
   )
   $       // EOL
-`
+`;
 
 results.code0007 = reggie.generate(code0007, 'gi');
 
