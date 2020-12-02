@@ -18,6 +18,19 @@ This package will take a Template Literal, remove comments, and generate, either
 
 ## Usage
 
+### Options
+
+`reggie.create`: A RegEx-ready String.
+
+* Takes a string literal.
+
+`reggie.generate`: A RegExp Object.
+
+* Takes a string literal.
+* Optional flags: defaults to `gm`
+
+### Examples
+
 ```javascript
 
 const Reggie = require('reggie-docs');
