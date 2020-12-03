@@ -139,5 +139,6 @@ console.log(results);
 
 ## To Do
 
-1. Continue to improve the logic.
-2. Add in error handling.
+1. [REQUESTED] Create a way to use this in a build process.
+2. Continue to improve the logic.
+3. Add in error handling.
