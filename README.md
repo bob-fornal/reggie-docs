@@ -5,8 +5,8 @@
 
 This package will take a Template Literal, remove comments, and generate, either:
 
-* `reggie.create`: A RegEx-ready String.
-* `reggie.generate`: A RegExp Object.
+* `reggie.create` creates RegEx-ready String.
+* `reggie.generate` generates RegExp Object.
 
 ## Version
 
