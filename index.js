@@ -1,19 +1,28 @@
 
 class Reggie {
-  constructor() {}
+  constructor() {
+    this.defaultFlag = 'gm';
+  }
 
-  stripComments(stringLiteral) {
-    return stringLiteral
+  setFlag(flag) {
+    this.defaultFlag = flag;
+  }
+
+  stripComments(templateLiteral) {
+    let string = (typeof templateLiteral === 'string') ? templateLiteral : templateLiteral.raw[0];
+    return string
       .replace(/\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$/gm, '');
   }
 
-  create(stringLiteral) {
-    return this.stripComments(stringLiteral)
+  create(templateLiteral) {
+    let string = (typeof templateLiteral === 'string') ? templateLiteral : templateLiteral.raw[0];
+    return this.stripComments(string)
       .replace(/(\r\n|r\|\n|\s)/gm, '');
   }
 
-  generate(stringLiteral, flags = 'gm') {
-    return new RegExp(this.create(stringLiteral), flags);
+  generate(templateLiteral, flags = this.defaultFlag) {
+    let string = (typeof templateLiteral === 'string') ? templateLiteral : templateLiteral.raw[0];
+    return new RegExp(this.create(string), flags);
   }
 }
 
