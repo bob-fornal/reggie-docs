@@ -38,7 +38,7 @@ This package will take a Template Literal, remove comments, and generate, either
 
 #### generate
 
-`reggie.generate(templateLiteral, [flags = 'gm']` returns a RegExp Object.
+`reggie.generate(templateLiteral, [flags = 'gm'])` returns a RegExp Object.
 
 * Takes a template literal.
 * Optional flags: defaults to `gm`
