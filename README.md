@@ -22,7 +22,7 @@ This package will take a Template Literal, remove comments, and generate, either
 
 #### setFlag
 
-`reggie.setFlag(flag)` sets the default flag used for `reggie.generate)`.
+`reggie.setFlag(flag)` sets the default flag used for `reggie.generate`.
 
 * Takes a string.
 
