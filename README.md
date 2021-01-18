@@ -115,8 +115,8 @@ const patternCheck0004b = '111-22-aaaa';
 
 results.code0004 = reggie.create(code0004);
 const code0004Exp = reggie.generate(code0004);
-results.code0004TestAValid = code0006Exp.exec(patternCheck0004a) !== null;
-results.code0004TestBValid = code0006Exp.exec(patternCheck0004b) !== null;
+results.code0004TestAValid = code0004Exp.exec(patternCheck0004a) !== null;
+results.code0004TestBValid = code0004Exp.exec(patternCheck0004b) !== null;
 
 // /^(v?\d+\.\d+\.\d+)$/gi
 const code0005 = `
