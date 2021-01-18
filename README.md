@@ -137,6 +137,12 @@ results.code0005 = reggie.generate(code0005, 'gi');
 console.log(results);
 ```
 
+## regex101 Documentation
+
+* [Spaces Before and After (by line)](https://regex101.com/r/3QGUNX/1)
+* [Multi Level Grouping](https://regex101.com/r/keZgrh/1)
+* [Version Checking](https://regex101.com/r/IHv6bB/1)
+
 ## To Do
 
 1. [REQUESTED] Create a way to use this in a build process.
